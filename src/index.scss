@@ -11,8 +11,7 @@ $GROUND_HEIGHT: 10vh;
 }
 
 body {
-  background-color: #aaa;
-  color: #246;
+  background-color: rgb(8, 14, 37);
   min-height: 100vh;
 }
 
@@ -503,8 +502,33 @@ body {
 }
 
 // Pages
-.portfolio {
-  background-color: black;
+.posts {
+  background-color: rgb(8, 14, 37);
 }
 
+.about-me{
+  height: 100vh;
+  background-color: rgb(8, 14, 37);
+}
 
+.animation-page {
+  background-color: rgb(8, 14, 37);
+}
+
+.project-page {
+  height: 100vh;
+  background-color: rgb(2, 71, 51);
+}
+// Menubar
+.menubar {
+  background-color: #000000;
+}
+
+// Styling
+.web-logo .h1 {
+  font-family: 'Monument Extended', sans-serif;
+}
+
+.h1 {
+  font-family: "Times New Roman", Times, serif;
+}

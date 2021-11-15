@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import AnimationPage from './pages/AnimationPage';
 import Homepage from './pages/Homepage';
 import AboutMe from './pages/AboutMe';
+import Posts from './pages/Posts';
 
 const App = () => {
   let element = useRoutes([
@@ -18,6 +19,7 @@ const App = () => {
         { path: '/home', element: <Homepage /> },
         { path: '/projects', element: <Projects /> },
         { path: '/animation', element: <AnimationPage /> },
+        { path: '/gallery', element: <Posts /> },
         { path: '/about-me', element: <AboutMe /> },
       ]
     }
@@ -28,7 +30,7 @@ const App = () => {
 
 const AppWrapper = () => {
   return (
-    <Router>
+    <Router basename='/projects'>
         <App/>
     </Router>
   )

@@ -1,26 +1,35 @@
 import React from 'react';
-import Preview from '../components/Preview';
-import {Grid, Transition} from 'semantic-ui-react';
+import {Grid, Transition, Segment} from 'semantic-ui-react';
+import Helmet from 'react-helmet';
+import Animation from '../components/Animation';
 
 const AnimationPage = () => {
     // const numElem:number[] = Array.from(Array(2).keys())
     const numElem:number[] = [1,2,3];
     return (
         <>
-            <Grid columns={3}>
-                { numElem &&
-                numElem.map((elem, i) =>  {
-                    <Transition.Group>
-                        {numElem &&
-                        numElem.map((elem) => (
-                            <Grid.Column key={elem} style={{ marginBottom: 20 }}>
-                                <Preview/>
-                            </Grid.Column>
+            <Helmet>
+                <title>Hafizuddin Jaafar | Animation</title>
+            </Helmet>
+            <div className="animation-page">
+                <Segment>
+                    <Grid columns={3}>
+                        { numElem &&
+                        numElem.map((elem, i) =>  (
+                            <Transition.Group>
+                                {numElem &&
+                                numElem.map((elem) => (
+                                    <Grid.Column key={elem} style={{ marginBottom: 400 }}>
+                                        <Animation/>
+                                    </Grid.Column>
+                                ))}
+                            </Transition.Group>
                         ))}
-                    </Transition.Group>
-                })}
-            </Grid>
+                    </Grid>
+                </Segment>
+            </div>
         </>
+        
     )
 };
 

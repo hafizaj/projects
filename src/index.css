@@ -7,8 +7,7 @@
 }
 
 body {
-  background-color: #aaa;
-  color: #246;
+  background-color: #080e25;
   min-height: 100vh;
 }
 
@@ -264,8 +263,34 @@ body {
   background-image: linear-gradient(var(--clr-white) 0px, transparent 2px, transparent 83px, var(--clr-white) 85px), linear-gradient(90deg, var(--clr-white) 0px, transparent 2px, transparent 39px, var(--clr-white) 39px, var(--clr-white) 41px, transparent 41px, transparent 78px, var(--clr-white) 80px);
 }
 
-.portfolio {
-  background-color: black;
+.posts {
+  background-color: #080e25;
+}
+
+.about-me {
+  height: 100vh;
+  background-color: #080e25;
+}
+
+.animation-page {
+  background-color: #080e25;
+}
+
+.project-page {
+  height: 100vh;
+  background-color: #024733;
+}
+
+.menubar {
+  background-color: #000000;
+}
+
+.web-logo .h1 {
+  font-family: "Monument Extended", sans-serif;
+}
+
+.h1 {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*# sourceMappingURL=index.css.map */
