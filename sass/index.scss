@@ -1,6 +1,7 @@
 $GROUND_WIDTH: 50vw;
 $GROUND_HEIGHT: 10vh;
 
+$default-color: #F47F8F;
 
 *,
 *::before,
@@ -507,8 +508,7 @@ body {
 }
 
 .about-me{
-  height: 100vh;
-  background-color: rgb(8, 14, 37);
+  background-color: $default-color;
 }
 
 .animation-page {
