@@ -1,49 +1,46 @@
-import React, {useState} from 'react';
-import { Container, Grid } from 'semantic-ui-react';
+import {Grid, Segment, Popup} from 'semantic-ui-react';
 import  Helmet  from 'react-helmet';
 
-import { Octokit } from '@octokit/core';
-
+import {projectNames} from '../util/data';
 import SingleProject from '../components/SingleProject';
+
+const style = {
+    borderRadius: 0,
+    opacity: 1,
+    padding: '1em',
+  }
+
+
 const Projects = () => {
-    const octokit = new Octokit();
-    const projectTest = {
-        Name:"Hafiz",
-        Description:"Test",
-        Date:"11.11.2021",
-        Thumbnail:"Thumbs"
-    }
     return (
         <>
             <Helmet>
                 <title>Hafizuddin Jaafar | Projects</title>
             </Helmet>
             <div className='project-page'>
-                <Grid columns={3}>
-                    <Grid.Column>
-                        <Container>
-                            <SingleProject 
-                            name = "Social Media Statistics Visualization"
-                            description="Project one"
-                            date="11.11.2011"
-                            thumbnail="123"
-                            />
-                            <SingleProject 
-                            name = "Risk Management Dashboard"
-                            description="Project one"
-                            date="11.11.2011"
-                            thumbnail="123"
-                            />
-                            <SingleProject 
-                            name = "BusserBot - Robotic Busser"
-                            description="Project one"
-                            date="11.11.2011"
-                            thumbnail="123"
-                            />
-
-                        </Container>
-                    </Grid.Column>
-                </Grid>
+            <Segment style={{ padding: '8em 0em' }} vertical>
+                    <Grid divided='vertically'>
+                        {projectNames &&
+                            projectNames.map((elem,i)=> (
+                            <Popup
+                            trigger={
+                                <Grid.Column key={i} mobile={3} tablet={6} computer={12} widescreen={16}>
+                                    <SingleProject 
+                                    name={elem.name} 
+                                    thumbnail={elem.thumbnail}
+                                    description={elem.description}
+                                    date={elem.date}/>
+                                </Grid.Column>
+                            }
+                            position="bottom center"
+                            inverted
+                            style={style}
+                            >
+                            <Popup.Header>{elem.name}</Popup.Header>
+                            </Popup>
+                        ))}
+                    </Grid>
+                </Segment>
             </div>
         </>
     )

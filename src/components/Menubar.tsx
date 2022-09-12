@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import {Menu, Segment, Image, Header} from 'semantic-ui-react';
+import {Menu, Header} from 'semantic-ui-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Menubar = () => {
@@ -15,7 +15,9 @@ const Menubar = () => {
                         <>
                             <Header as="h1" inverted style={{margin:0,
                             fontFamily: 'Monument Extended, sans-serif'}}>
+                                    <Header.Content as={Link} to="">
                                     HAFIZUDDIN JAAFAR
+                                    </Header.Content>
                                     <Header.Subheader as={Link}
                                     to="/about-me">
                                         Webdev | Data Science | Photography

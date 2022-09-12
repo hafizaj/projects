@@ -30,7 +30,7 @@ const App = () => {
 
 const AppWrapper = () => {
   return (
-    <Router basename='/projects'>
+    <Router basename='/me'>
         <App/>
     </Router>
   )

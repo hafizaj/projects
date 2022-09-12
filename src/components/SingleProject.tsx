@@ -11,22 +11,23 @@ interface Project {
 class SingleProject extends React.Component<Project, {}> {
     render() {
         return (
-            <Card inverted>
-                    <Image src={this.props.thumbnail} wrapped ui={false} />
-                        <Card.Content>
-                        <Card.Header>{this.props.name}</Card.Header>
-                        {this.props.date && (
-                        <Card.Meta>
-                            <span className='date'>{this.props.date}</span>
-                        </Card.Meta>)}
-                        <Card.Description>
-                            {
-                            this.props.description && 
-                            (<span className='date'>{this.props.date}</span>)
-                            }
-                        </Card.Description>
-                        </Card.Content>
-                </Card>
+            <Card>
+                <Image src={this.props.thumbnail} wrapped ui={false} />
+                <Card.Content>
+                    <Card.Header as='h2'
+                        inverted>{this.props.name}</Card.Header>
+                    {this.props.date && (
+                    <Card.Meta>
+                        <span className='date'>{this.props.date}</span>
+                    </Card.Meta>)}
+                    <Card.Description>
+                        {
+                        this.props.description && 
+                        (<span className='description'>{this.props.description}</span>)
+                        }
+                    </Card.Description>
+                </Card.Content>
+            </Card>
         );
     }
 };

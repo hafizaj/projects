@@ -262,11 +262,13 @@ body {
   background-color: #F47F8F; }
 
 .animation-page {
-  background-color: #080e25; }
+  background-color: #00ced1; }
 
 .project-page {
   height: 100vh;
-  background-color: #024733; }
+  background-color: #00ced1;
+  width: 50%;
+  margin: 0 auto; }
 
 .menubar {
   background-color: #000000; }

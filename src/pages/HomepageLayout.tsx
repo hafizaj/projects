@@ -1,6 +1,4 @@
-import React, {useState} from 'react';
-import {Segment, Header, Button, Icon, Grid} from 'semantic-ui-react';
-import {Link, Outlet} from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 import Menubar from '../components/Menubar';
 const HomepageLayout = () => {
     return (

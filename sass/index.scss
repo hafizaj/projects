@@ -2,6 +2,7 @@ $GROUND_WIDTH: 50vw;
 $GROUND_HEIGHT: 10vh;
 
 $default-color: #F47F8F;
+$default-dark-green: #00ced1;
 
 *,
 *::before,
@@ -512,12 +513,14 @@ body {
 }
 
 .animation-page {
-  background-color: rgb(8, 14, 37);
+  background-color: $default-dark-green;
 }
 
 .project-page {
   height: 100vh;
-  background-color: rgb(2, 71, 51);
+  background-color: $default-dark-green;
+  width: 50%;
+  margin: 0 auto;
 }
 // Menubar
 .menubar {
