@@ -7,7 +7,6 @@ const Homepage = () => {
     return (
         <>
             <Container>
-                {/* Heads up! We apply there some custom styling, you usually will not need it. */}
                 <style>
                 {`
                 html, body {
@@ -31,68 +30,26 @@ const Homepage = () => {
                 </style>
 
                 <Header as='h2' icon inverted textAlign='center'>
-                <Icon name='grid layout' />
-                Advanced Grid
-                <Header.Subheader>
-                    This page contains some helpful examples that can be usefull for advanced layouts.
-                </Header.Subheader>
+                    <Icon name='grid layout' />
+                    Advanced Grid
+                    <Header.Subheader>
+                        This page contains some helpful examples that can be usefull for advanced layouts.
+                    </Header.Subheader>
                 </Header>
                 <Divider />
-
                 <Header as='h2' inverted textAlign='center'>
                 Basic 16
                 </Header>
                 <Grid>
                 {/* Heads up! Grid.Row is not mandatory, Grid.Column is enough for grid to work */}
-                <Grid.Row>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
+                <Grid.Row> 
+                    {Array.from(new Array(16), (x, i) => {
+                        return (
+                        <Grid.Column>
+                            <p />
+                        </Grid.Column>
+                        )
+                    })}
                 </Grid.Row>
                 </Grid>
 
@@ -101,21 +58,13 @@ const Homepage = () => {
                 </Header>
                 <Grid>
                 <Grid.Row columns={5}>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
-                    <Grid.Column>
-                    <p />
-                    </Grid.Column>
+                    {Array.from(new Array(5), (x, i) => {
+                        return (
+                        <Grid.Column>
+                            <p />
+                        </Grid.Column>
+                        )
+                    })}
                 </Grid.Row>
 
                 <Grid.Row>

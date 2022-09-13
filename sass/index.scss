@@ -517,14 +517,12 @@ body {
 }
 
 .project-page {
-  height: 100vh;
   background-color: $default-dark-green;
-  width: 50%;
-  margin: 0 auto;
 }
 // Menubar
 .menubar {
   background-color: #000000;
+  width: 100vw;
 }
 
 // Styling

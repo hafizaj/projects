@@ -64,7 +64,7 @@ export const projectNames = [
         'name': 'Risk Management Dashboard',
         'description': 'Entreprise level ',
         'date': '2021-12-01',
-        'thumbnail': './res/img/1.png'
+        'thumbnail': '1.png'
     },
     {
         'name': 'LinkedIn Contacts Manager',

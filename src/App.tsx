@@ -16,7 +16,7 @@ const App = () => {
       path: '/',
       element: <HomepageLayout />,
       children: [
-        { path: '/home', element: <Homepage /> },
+        { path: '', element: <Homepage /> },
         { path: '/projects', element: <Projects /> },
         { path: '/animation', element: <AnimationPage /> },
         { path: '/gallery', element: <Posts /> },

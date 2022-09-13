@@ -50,7 +50,7 @@ const Menubar = () => {
                         to="/animation"
                     />
                 </Menu.Menu>
-                
+
             </Menu>
         </div>
     )
